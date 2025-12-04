@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowSkin — Check-out</title>
+
+    <!-- Link your external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">GlowSkin</h2>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="your-cart.html">Shopping Cart</a>
+            <a href="portfolio.html">Portfolios</a>
+        </nav>
+    </header>
+
+    <section class="checkout-container">
+        <h1 class="checkout-title">Checkout</h1>
+
+        <div class="checkout-content">
+            <!-- LEFT: SHIPPING & PAYMENT -->
+            <div class="checkout-forms">
+
+                <!-- Shipping Information -->
+                <div class="checkout-box">
+                    <h2>Shipping Information</h2>
+
+                    <form class="shipping-form">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+
+                        <label>Email Address</label>
+                        <input type="email" placeholder="you@example.com" required>
+
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="(123) 456-7890" required>
+
+                        <label>Street Address</label>
+                        <input type="text" placeholder="123 Main St" required>
+
+                        <label>City</label>
+                        <input type="text" placeholder="Salt Lake City" required>
+
+                        <label>State</label>
+                        <input type="text" placeholder="UT" required>
+
+                        <label>Zip Code</label>
+                        <input type="text" placeholder="84044" required>
+                    </form>
+                </div>
+
+                <!-- Payment Information -->
+                <div class="checkout-box">
+                    <h2>Payment Method</h2>
+
+                    <form class="payment-form">
+                        <label>Cardholder Name</label>
+                        <input type="text" placeholder="Name on Card" required>
+
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" required>
+
+                        <div class="payment-row">
+                            <div>
+                                <label>Expiration Date</label>
+                                <input type="text" placeholder="MM/YY" required>
+                            </div>
+
+                            <div>
+                                <label>CVC</label>
+                                <input type="text" placeholder="123" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- RIGHT: ORDER SUMMARY -->
+            <aside class="checkout-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+                    <span>Glow Hydrating Serum</span>
+                    <span>$29.99</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Green Tea Cleanser</span>
+                    <span>$19.99</span>
+                </div>
+
+                <div class="summary-line"></div>
+
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>$49.99</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span>$4.99</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$54.98</span>
+                </div>
+
+                <button class="btn-primary place-order-btn">Place Order</button>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 GlowSkin. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms & Conditions</a>
+        </p>
+    </footer>
+
+</body>
+</html>
