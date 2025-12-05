@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowSkin — Shopping Cart</title>
+
+    <!-- Link your external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">GlowSkin</h2>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="your-cart.html">Shopping Cart</a>
+            <a href="portfolio.html">Portfolios</a>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+
+        <!-- If Cart is Empty -->
+        <div class="cart-empty-message" style="display:none;">
+            <p>Your cart is currently empty.</p>
+            <a href="shop.html" class="btn-primary">Browse Products</a>
+        </div>
+
+        <!-- Cart Items List -->
+        <div class="cart-items">
+
+            <!-- Cart Item -->
+            <div class="cart-item">
+                <img src="images/hydrating-serum.png" alt="Glow Hydrating Serum">
+                <div class="item-details">
+                    <h3>Glow Hydrating Serum</h3>
+                    <p class="item-price">$29.99</p>
+
+                    <div class="quantity-control">
+                        <button class="qty-btn decrease">-</button>
+                        <input type="number" class="qty-input" value="1" min="1">
+                        <button class="qty-btn increase">+</button>
+                    </div>
+
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+
+            <!-- Duplicate this block for more items -->
+            <div class="cart-item">
+                <img src="images/green-tea-cleanser.png" alt="Green Tea Cleanser">
+                <div class="item-details">
+                    <h3>Green Tea Cleanser</h3>
+                    <p class="item-price">$19.99</p>
+
+                    <div class="quantity-control">
+                        <button class="qty-btn decrease">-</button>
+                        <input type="number" class="qty-input" value="2" min="1">
+                        <button class="qty-btn increase">+</button>
+                    </div>
+
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Cart Summary -->
+        <aside class="cart-summary">
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$67. -</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>$4.99</span>
+            </div>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <span>$72.99</span>
+            </div>
+
+            <a href="checkout.html" class="btn-primary checkout-btn">Proceed to Checkout</a>
+        </aside>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 GlowSkin. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms & Conditions</a>
+        </p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
